@@ -28,3 +28,35 @@ So, our main objectives to address the above cited problems are
 * Hdmi cable Rs 195
 * 6 in 1 electric soldering kit  Rs 285
 * Digital multimeter Rs 164.34
+
+
+## Setup Instructions
+### Raspbian pi os installation
+ * Downloaded image file of OS  [link](https://www.raspberrypi.org/downloads/)
+ * Make the bootable copy of OS on MicroSD card.
+ * setting of username , password
+
+
+### Setting of ssh,rdp
+As we don’t have a LCD monitor for connecting our pi board , so we decided to setup ssh , RDP.
+As there are chances of ip changes so we have assigned a static ip for pi.
+
+### Static ip creation Steps :
+
+Open terminal and type sudo nano etc/network/interface
+change dhcp to static and enter following:
+
+		address:inet
+		netmask:mask
+		network:destination address
+		broadcast:bcast address
+SSH :
+
+    Use of putty in windows
+    use of remmina in Linux 
+
+RDP :
+
+    Use of Remote Desktop connection in windows
+    Use remmina in Linux 
+
