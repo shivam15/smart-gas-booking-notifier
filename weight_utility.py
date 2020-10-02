@@ -17,7 +17,9 @@ def weight_read():
 	    #print weight
             if(float(weight) < 4):
                 #call_number(config_arr["phonenum"])
-                print "calling"            
+                print "calling" 
+	else:
+		print "Weight is 0"
         ser.close()
      except:
         print "Weight read error"
